@@ -15,4 +15,16 @@ This project use Sqoop to  import data from MySQL(Linux) to HDFS
  
  3. The directories shouldn't be created before running the query cause the execution of sqoop will automatic create directories.
  
+ 4. These queries can also be saved as sqoop jobs:
  
+                   list sqoop job: 
+                   sqoop job --list -meta-connect jdbc:hsqldb:hsql://localhost:16000/sqoop
+
+                   kill sqoop job:
+                   sqoop job --kill __ -meta-connect jdbc:hsqldb:hsql://localhost:16000/sqoop
+                   
+                   run sqoop job
+                   sqoop job --meta-connect jdbc:hsqldb:hsql://localhost:16000/sqoop --exec BranchJob
+  
+  If the sqoop job is created and running on sqoop metastore, make sure the sqoop metastore is running when the sqoop job is executing.
+       

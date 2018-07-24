@@ -7,7 +7,8 @@ This project use Sqoop to  import data from MySQL(Linux) to HDFS
              CDW_SAPP_BRANCH;
              CDW_SAPP_CUSTOMER;
              CDW_SAPP_CREDITCARD;
- The database source file is not provided due to privacy
+ The database source file is not provided due to privacy.
+ 
  According to the mapping document, a forth  " table " is created based on the CDW_SAPP_CREDITCARD table.
  
  2. Sqoop import the data from MYSQL to HDFS and stores the data as textfiles.

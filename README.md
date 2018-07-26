@@ -18,6 +18,10 @@ This project use Sqoop to  import data from MySQL(Linux) to HDFS
  
  4. These queries can also be saved as sqoop jobs:
  
+ 
+ 5. Sqoop job commands:
+ 
+ 
                    list sqoop job: 
                    sqoop job --list -meta-connect jdbc:hsqldb:hsql://localhost:16000/sqoop
 
